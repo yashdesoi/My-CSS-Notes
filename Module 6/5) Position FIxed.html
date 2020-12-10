@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        body > p {
+            margin: 70px 0;;
+        }
+
+        /* If we set position absolute for an element, then that element gets fixed to every instance of the view port. It is very similar to position absolute. */
+        .container {
+            margin: 0;
+            padding: 5px;
+            width: 100%;
+            height: 200px;
+            background-color: rgba(221, 160, 221, 0.5);
+
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        /* Position Absolute inside Position Fixed */
+        .box1 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        /* Position Relative inside Position Fixed */
+        .box2 {
+            position: relative;
+            top: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero sapiente tempora voluptatibus suscipit neque, vitae dicta, quidem ab autem laborum natus doloremque ut. Iusto doloremque deserunt laboriosam vitae eius?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex porro eveniet deserunt, esse quis aut, repellendus enim facere dolorum repellat! Beatae repellat nam magni labore, molestiae commodi quidem velit.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, veritatis. Et obcaecati maxime repudiandae, dolorem doloribus, aperiam ipsam porro vitae, expedita totam voluptates repellat excepturi. Autem nemo inventore esse sequi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quae ratione maxime perferendis consequatur voluptatibus illo distinctio eligendi eaque. Ut magni fuga quibusdam fugiat odio sed doloribus, hic ipsam mollitia.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, atque expedita. Quod nihil pariatur, rerum cupiditate libero quae labore nulla enim earum et magni sapiente nobis aliquid doloribus quos voluptatum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quaerat quae quia facilis? Aliquid vitae autem quas. Corrupti obcaecati dolor laborum tempore quam eligendi alias nihil qui! In, provident.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod neque laboriosam accusantium quibusdam necessitatibus repellendus dolorem vel consequatur harum quasi eum labore dolorum blanditiis nihil soluta, explicabo accusamus enim alias.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt at provident saepe nihil atque necessitatibus sit consectetur exercitationem, asperiores modi placeat enim repellendus mollitia, ab quam in quod dolore quas!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quo fugiat rem necessitatibus porro harum repellat nemo iure atque molestias, minima impedit facere consequuntur quaerat quam autem aliquid facilis omnis.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo sit facilis, iste voluptatibus neque sequi numquam eius soluta omnis! Iusto, cum officia! Laudantium, reiciendis voluptatem suscipit impedit quam voluptate.</p>
+</body>
+</html>

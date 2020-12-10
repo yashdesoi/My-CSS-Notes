@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute 1</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+
+        /* By default an element has a position set to static. If we set an element's position to absolute, then that element will get detached from the normal document flow, hence now all the elements which are next to it and previous to it will ignor the element which is absolutly positioned. */
+
+        /* We can now set properties such as top, bottom, left, right and z-index. Element can now be positioned relative to the document, even the html element will ignore the element with position absolute. */
+
+        .box1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box5 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .box7 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .container > span {
+            background-color: yellow;
+        }
+
+        .special {
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <span class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores beatae, culpa corrupti, quisquam cumque doloribus minus sunt nesciunt aperiam tempore magni libero explicabo, eaque ducimus iste perspiciatis.</span>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores beatae, culpa corrupti, quisquam cumque doloribus minus sunt nesciunt aperiam tempore magni libero explicabo, eaque ducimus iste perspiciatis.</span>
+    </div>
+</body>
+</html>

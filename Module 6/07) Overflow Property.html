@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .container > p {
+            text-align: center;
+            font-size: 30px;
+            margin: 177.8px auto;
+        }
+        
+        .box1 {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+        }
+
+        .box2 {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+        }
+
+        .box3 {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+        }
+
+        .box4 {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+        }
+
+        .container:nth-of-type(2) {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <p>overflow: visible; (default)</p>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <p>overflow: hidden;</p>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+    
+</body>
+</html>

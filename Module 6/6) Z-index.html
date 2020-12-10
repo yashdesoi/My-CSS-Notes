@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* When we add position property to any element, we get access to z-index along with top, bottom, left and right. Once we set position for any element (with value other than static), z-index by default is 0. And according to document flow, the elements below other elements will appear over them. */
+
+        /* z-index lets us set z-axis height. z-index has no units like px, em, etc. It takes integers as values and that too whole numbers, no decimals. */
+        .box {
+            margin: 0;
+        }
+
+        .box2 {
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .box3 {
+            position: relative;
+            bottom: 40px;
+            left: 40px;
+        }
+
+        .box4 {
+            position: relative;
+            bottom: 60px;
+            left: 60px;
+        }
+
+        .box5 {
+            position: relative;
+            left: 20px;
+            z-index: -1.5; /* No decimals */
+        }
+
+        .box6 {
+            position: relative;
+            bottom: 20px;
+            left: 40px;
+            z-index: -1;
+        }
+
+        .box7 {
+            position: relative;
+            bottom: 40px;
+            left: 60px;
+            z-index: -2;
+        }
+
+        .container {
+            border-color: springgreen;
+            position: relative;
+        }
+
+        .container:nth-of-type(1) > img {
+            width: 390px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3;
+        }
+
+        .container:nth-of-type(2) {
+            background: url(Image.jpg);
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <p>Image set using image tag</p>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <img src="Image.jpg">
+    </div>
+    <p>Image set using css backgroung property</p>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+    </div>
+</body>
+</html>

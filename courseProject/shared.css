@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* //////////////////////////////////////////// <header> //////////////////////////////////////////// */
+
+.main-header {
+    background-color: #2ddf5c;
+    padding: 8px 16px;
+
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+    /* Negative margin-right is provided to remove the default
+       spacing between inline-block elements. <div> and <nav>
+       inside header are inline-blocks */
+    margin-right: -4.1875px;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 77.9px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav__item > a {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.main-nav__item > a:hover {background-color: azure;}
+
+.main-nav__item > a:active {
+    background-color: #0e4f1f;
+    color: azure;
+}
+
+/* //////////////////////////////////////////// <footer> //////////////////////////////////////////// */
+
+.main-footer {
+    background-color: black;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.main-footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-footer a {
+    color: azure;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    color: powderblue;
+}

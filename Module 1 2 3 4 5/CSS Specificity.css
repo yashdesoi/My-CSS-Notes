@@ -1,0 +1,75 @@
+/* Inline Styles                               - 1000
+   ID selectors                                -  100
+   Classes, Attributes and Pseudo-classes      -   10
+   Elements and Pseudo-elements                -    1  */
+
+/* ////////////////////////////// EXAMPLE 1 ////////////////////////////// */
+/* Specificity = 1 + 1 = 2 */
+div > p {
+    color: red;
+}
+
+/* Specificity = 1  */
+p {
+    color: blue;
+}
+
+/* ////////////////////////////// EXAMPLE 2 ////////////////////////////// */
+.style2 {
+    border: 1px solid green;
+}
+
+.style1 {
+    border: 1px solid purple;
+}
+/* Both has specificity of 10, but since style1 is written after
+style2 hence style1 will be applied */
+
+/* ////////////////////////////// EXAMPLE 3 ////////////////////////////// */
+/* Specificity = 100 */
+#paragraph {
+    background-color: yellow;
+}
+/* Specificity = 10 */
+.style3 {
+    background-color: pink;
+}
+
+/* ////////////////////////////// EXAMPLE 4 ////////////////////////////// */
+#heading {
+    font-family: monospace;
+}
+/* Even though heading has higher specificity than style3, still both
+are dealing with different properties. Hence both styles would get
+applied */
+
+/* ////////////////////////////// EXAMPLE 5 ////////////////////////////// */
+/* Specificity = 10 */
+.yellow {
+    color: yellow;
+}
+/* Specificity = 100 */
+#new-paragraph {
+    color: skyblue;
+}
+/* In line styles have higher specificity of 1000 */
+
+/* ////////////////////////////// EXAMPLE 6 ////////////////////////////// */
+/* Specificity = 1 + 1 = 2 */
+ul > li {
+    color: green;
+}
+/* Specificity = 10 + 2 = 12 */
+.list > li {
+    color: skyblue;
+}
+
+/* ////////////////////////////// EXAMPLE 7 ////////////////////////////// */
+/* Specificity = 100 + 10 + 10 = 120 */
+#div-1 > .second-block > .text {
+    color: crimson;
+}
+/* Specificity = 10 + 100 + 100 = 210 */
+.first-block > #div-2 > #sentence {
+    color: maroon;
+}

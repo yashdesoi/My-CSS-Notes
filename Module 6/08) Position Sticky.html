@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sticky</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        body > p {
+            margin: 100px auto;
+        }
+
+        .box {
+            margin: 36px 10px;
+        }
+
+        /* Sticky position is a combination of relative and fixed position. Viewport ignores element's margin. This position property ony holds inside the scope of element's parent. */
+
+        .box1 {
+            position: sticky;
+            top: 0;
+        }
+
+        .box3 {
+            position: sticky;
+            top: 0;
+        }
+
+        body > .box {
+            width: calc(100% - 18px);
+            color: white;
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+
+    <div class="box box2">2</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+     
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem voluptatum iste cupiditate quos. Consequuntur, obcaecati quasi! Odit amet voluptatibus, iure quisquam ratione facere reiciendis aspernatur quos saepe quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo earum nulla necessitatibus voluptatem, consequuntur modi reprehenderit eaque dignissimos et! Tempore commodi hic eveniet architecto. Esse fugiat molestiae quibusdam enim incidunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ullam delectus et eveniet ea ex, nobis rerum accusamus, dolorem necessitatibus ipsam laborum enim est, nesciunt vitae praesentium quis obcaecati aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia doloremque velit assumenda. Aliquid accusamus et unde porro enim repellendus, fugit necessitatibus voluptas laborum vel saepe debitis. Animi, fuga eveniet.</p>
+
+    
+</body>
+</html>

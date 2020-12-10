@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute inside Relative</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* If we put element A with position set as absolute, inside a parent element B which has position set to relative. Then we can position element A absolutely with respect to element B. Now element A won't take position with respect to initial viewport, now it will take position with respect to padding box of element B. */
+
+        .container {
+            position: relative;
+        }
+        .box1 {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .box3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box5 {
+            position: absolute;
+            bottom: 0;
+            right: 0;;
+        }
+
+        /* Reletive element inside relative element, nothing special will happen. */
+
+        .box6 {
+            position: relative;
+            left: 20px;
+            top: 10px;
+        }    
+
+        .box7 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .box9 {
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+    </div>
+    
+</body>
+</html>

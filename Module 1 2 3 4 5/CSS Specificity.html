@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="CSS Specificity.css">
+</head>
+<body>
+    <!-- EXAMPLE 1 -->
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus temporibus labore asperiores praesentium neque libero architecto, quis tempore harum corrupti reiciendis eveniet, distinctio nemo non ex nobis debitis provident numquam.</p>
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eos nisi illo voluptates architecto, quas debitis modi, suscipit voluptas, sed error est praesentium laboriosam nostrum officia ut! Repudiandae, at eius.</p>
+
+    <!-- EXAMPLE 2 -->
+    <p class="style1 style2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto tempore, odio voluptatum laudantium, est reiciendis doloribus commodi aut exercitationem possimus cum nihil eius nostrum, fugit dolorem culpa facilis ipsam laboriosam.</p>
+
+    <!-- EXAMPLE 3 -->
+    <p class="style3" id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, autem. Veritatis porro reiciendis similique cupiditate nostrum? Accusantium ipsa, blanditiis pariatur voluptas modi voluptates dolorem error ratione ad praesentium quod quidem!</p>
+
+    <!-- EXAMPLE 4 -->
+    <h3 class="style3" id="heading">This is Heading</h3>
+
+    <!-- EXAMPLE 5 -->
+    <p style="color: orangered" class="yellow" id="new-paragraph">This is a paragraph</p>
+
+    <!-- EXAMPLE 6 -->
+    <ul class="list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <!-- EXAMPLE 7 -->
+    <div class="first-block" id="div-1"> 
+        <div class="second-block" id="div-2">
+            <p class="text" id="sentence">Hello World</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin: 8px auto;
+}
+
+.main-nav {
+    background-color: gray;
+    padding: 10px;
+    border-top: 4px solid firebrick;
+    border-radius: 0 0 8px 8px;
+}
+
+.main-nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-nav__item > a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+}

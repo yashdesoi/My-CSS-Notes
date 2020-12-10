@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute 2</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+
+        /* Even if element is down below the DOM, still it will be referenced from the initial viewport. */
+
+        /* Element 8 and 10 were down below, still when we set element 10 in absolute positioning and added bottom to -10px, it was set against initial viewport. */
+
+        .box1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box3 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .box4 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        body > p {
+            margin: 50px 0;
+        }
+
+        .container-two {
+            width: 400px;
+            height: 400px;
+            border: 5px solid gray;
+            margin: 20px auto;
+        }
+
+        .box8 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .box10 {
+            position: absolute;
+            bottom: -30px;
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero sapiente tempora voluptatibus suscipit neque, vitae dicta, quidem ab autem laborum natus doloremque ut. Iusto doloremque deserunt laboriosam vitae eius?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex porro eveniet deserunt, esse quis aut, repellendus enim facere dolorum repellat! Beatae repellat nam magni labore, molestiae commodi quidem velit.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, veritatis. Et obcaecati maxime repudiandae, dolorem doloribus, aperiam ipsam porro vitae, expedita totam voluptates repellat excepturi. Autem nemo inventore esse sequi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quae ratione maxime perferendis consequatur voluptatibus illo distinctio eligendi eaque. Ut magni fuga quibusdam fugiat odio sed doloribus, hic ipsam mollitia.</p>
+
+    <div class="container-two">
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: gray;
+        }
+
+        .content {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+
+        .inline-block__container {
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+        .inline__container {
+            display: inline;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <p>One inline-block element and another inline element come in same line which we expect.</p>
+
+    <div class="inline-block__container" style="background-color: lightseagreen;">Yash</div>
+    <div class="inline__container" style="background-color: lightskyblue;">Desai</div>
+
+    <p>But if both inline aswell as inline-block element containes a pure block element, then they won't come in same line. Also inline-block container will take the dimensions of the content element, but its not the case with inline container.</p>
+    <div class="inline-block__container">
+        <div class="content"></div>
+    </div>
+
+    <div class="inline__container">
+        <div class="content"></div>
+    </div>
+
+    <p>Two inline elements will come in same line.</p>
+    <span style="background-color: lightseagreen;">Yash</span>
+    <span style="background-color: lightskyblue;">Desai</span>
+
+    <p>Two inline-block container containing block elements will come in same line.</p>
+    <div class="inline-block__container">
+        <div class="content"></div>
+    </div>
+
+    <div class="inline-block__container">
+        <div class="content"></div>
+    </div>
+
+    <p>Two inline container containing inline-block elements will fucked up result.</p>
+    <div class="inline__container">
+        <div class="content inline-block__container"></div>
+    </div>
+
+    <div class="inline__container inline-block__container>
+        <div class="content"></div>
+    </div>
+
+</body>
+</html>

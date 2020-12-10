@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+body > * {
+    box-sizing: border-box;
+}
+
+.box {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.one {
+    background-color: chartreuse;
+    margin: 0 calc(calc(100% - 150px) / 2);
+
+}
+
+.two {
+    background-color: lime;
+    margin: 0 calc(calc(100% - calc(150px * 2)) / 4);
+}
+
+.three {
+    background-color: springgreen;
+    margin: 0 calc(calc(100% - calc(150px * 3)) / 6);
+}
+
+.four {
+    background-color: darkturquoise;
+    margin: 0 calc(calc(100% - calc(150px * 4)) / 8);
+}
+
+.five {
+    background-color: mediumorchid;
+    margin: 0 calc(calc(100% - calc(150px * 5)) / 10);
+}

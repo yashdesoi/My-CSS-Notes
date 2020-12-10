@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc() function in CSS</title>
+    <style>
+        body {
+            margin: 0;
+            --smallDimension: 300px;
+            --bigDimension: 50%;
+        }
+
+        /* Select all elements which are direct children of body element */
+        body > * {
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+
+        .small-box {
+            width: var(--smallDimension);
+            height: var(--smallDimension);
+        }
+
+        .big-box {
+            width: var(--bigDimension);
+            height: 500px;
+        }
+
+        .box-one {
+            background-color: cornflowerblue;
+        }
+
+        .box-two {
+            background-color: darksalmon;
+            margin-left: calc(100% - var(--smallDimension));
+
+        }
+
+        .box-three {
+            background-color: paleturquoise;
+        }
+
+        .box-four {
+            background-color: darksalmon;
+            margin-left: calc(100% - var(--bigDimension))
+        }
+    </style>
+</head>
+<body>
+    <div class="small-box box-one"></div>
+    <div class="small-box box-two"></div>
+    <div class="small-box box-three"></div>
+
+    <div class="big-box box-one"></div>
+    <div class="big-box box-four"></div>
+    <div class="big-box box-three"></div>
+    
+</body>
+</html>

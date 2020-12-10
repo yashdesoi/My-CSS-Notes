@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Align</title>
+    <style>
+        /* vertical-align property is only valid for inline
+           and inline-block level elements. */
+
+        /* By default vertical-align = baseline */
+
+        /* |||||||||||||||||||||||||| EXAMPLE 1 |||||||||||||||||||||||||| */
+
+        /* Example for inline level elements */
+        .container-one {
+            background-color: yellow;
+            font-size: 30px;
+
+        }
+
+        .container-one > span {
+            background-color: orange;
+            font-size: 10px;
+        }
+
+        .one {vertical-align: super;}
+
+        .two {vertical-align: sub;}
+
+        .three {vertical-align: baseline;}
+
+        .four {vertical-align: top;}
+
+        .five {vertical-align: middle;}
+
+        .six {vertical-align: bottom;}
+
+        /* |||||||||||||||||||||||||| EXAMPLE 2 |||||||||||||||||||||||||| */
+
+        
+        /* Example for inline-block level elements. In
+           following example we will see how we can center
+           the inline block elements with dissimilar heights. */
+
+
+        /* Example without verticle-align */
+        .container-two {
+            background-color: thistle;
+            text-align: center;
+        }
+
+        .box {
+            width: 50px;
+            background-color: tomato;
+            display: inline-block;
+        }
+
+        .box-one {
+            height: 20px;
+        }
+
+        .box-two {
+            height: 50px;
+        }
+
+        .box-three {
+            height: 30px;
+        }
+
+        /* |||||||||||||||||||||||||| EXAMPLE 3 |||||||||||||||||||||||||| */
+
+        .top {
+            vertical-align: top;
+        }
+
+        .middle {
+            vertical-align: middle;
+        }
+
+        .bottom {
+            vertical-align: bottom;
+        }
+
+        .baseline {
+            vertical-align: baseline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>Example 1:- Inline elements</p>
+
+    <div class="container-one">super:<span class="one">one</span> sub:<span class="two">two</span> baseline:<span class="three">three</span> top:<span class="four">four</span> middle:<span class="five">five</span> bottom:<span>six</span> default:<span>seven</span></div>
+
+    <p>Example 2:- Inline block elements (default)</p>
+
+    <div class="container-two">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+
+    <p>Example 3:- Inline block elements (top)</p>
+
+    <div class="container-two">
+        <div class="box top box-one"></div>
+        <div class="box top box-two"></div>
+        <div class="box top box-three"></div>
+    </div>
+
+    <p>Example 4:- Inline block elements (middle)</p>
+
+    <div class="container-two">
+        <div class="box middle box-one"></div>
+        <div class="box middle box-two"></div>
+        <div class="box middle box-three"></div>
+    </div>
+
+    
+
+    <p>Example 5:- Inline block elements (bottom)</p>
+
+    <div class="container-two">
+        <div class="box bottom box-one"></div>
+        <div class="box bottom box-two"></div>
+        <div class="box bottom box-three"></div>
+    </div>
+
+    <p>Example 6:- Inline block elements (baseline)</p>
+
+    <div class="container-two">
+        <div class="box baseline box-one"></div>
+        <div class="box baseline box-two"></div>
+        <div class="box baseline box-three"></div>
+    </div>
+
+    
+</body>
+</html>

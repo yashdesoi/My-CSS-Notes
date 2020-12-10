@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#example-one > span,
+#example-two > span,
+#example-three > span,
+#example-four > span {
+    display: inline-block;
+    background-color: darksalmon;
+    border: 1px solid darkred;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#example-three > .special {
+    margin-right: -4px;
+}

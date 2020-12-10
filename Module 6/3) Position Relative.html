@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+
+        /* When we apply position as relative, we can position it relatively from its current position. Rest of the element won't get affected, even two elements with position relative won't react. */
+
+        .container {
+            height: 600px;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        .box1 {
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .box3 {
+            bottom: 25px;
+        }
+
+        .box5 {
+            bottom: 25px;
+            left: 25px;
+        }
+
+        .box6 {
+            bottom: 50px;
+            left: 50px;
+            z-index: -1;
+        }
+
+        /* I we put other properties like margin, etc. Element with position set as relative will normally take that effect with respect to its parent element. */
+
+        .box7 {
+            margin: 10px auto;
+        }
+
+        /* If we change the realtive position, while margin set. Element will take that position */
+
+        .box8 {
+            margin: 10px auto;
+            left: 10px;
+            top: 10px;
+        }
+
+        .box9 {
+            left: 10px;
+            top: 10px;
+            margin: 10px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+    </div>
+</body>
+</html>

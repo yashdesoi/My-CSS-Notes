@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering elements horizontally</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 50%;
+            padding: 10px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 150px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: firebrick;
+        }
+
+        .block-one {
+            /* Block elements won't be centered by just aligining text as center for 
+               .container, because by default we have margin-left for them. */
+            background-color: olive;
+        }
+
+        .block-two {
+            /* We need to adjust their margin individually to center them */
+            background-color: midnightblue;
+            margin: 0 auto;
+        }
+
+        .inline {
+            background-color: goldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box inline-block"></div>
+        <div class="box block-one"></div>
+        <div class="box block-two"></div>
+        <span class="inline">Width of inline elements are useless, they take width of the content present inside</span>
+    </div>
+</body>
+</html>

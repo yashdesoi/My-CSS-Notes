@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min-width & max-width</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 15px;
+        }
+
+        div {
+            border: 2px solid black;
+        }
+
+        .min__max-reference {
+            width: 50%;
+            margin-bottom: 5px;
+        }
+
+        .min__min-reference {
+            width: 500px;
+        }
+
+        .min, .max {
+            border: 1px solid black;
+            color: palegoldenrod;
+            cursor: default;
+
+        }
+
+        .min {
+            background-color: indianred;
+            width: 50%;
+            min-width: 500px;
+        }
+
+        .max__max-reference {
+            width: 1000px;
+            margin-bottom: 5px;
+        }
+
+        .max__min-reference {
+            width: 100%;
+        }
+
+        .max {
+            background-color: mediumorchid;
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="min__max-reference"></div>
+    <div class="min__min-reference"></div>
+    <p class="min">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae earum incidunt cum nostrum facilis. Excepturi ea totam fuga, et tempora quas voluptas enim voluptatem sunt, officia at dolorum in ullam?</p>
+
+    <div class="max__max-reference"></div>
+    <div class="max__min-reference"></div>
+    <p class="max">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quas? Eius veritatis ipsam consectetur eligendi facilis sequi, dolor ea tempora placeat? Voluptatibus, accusantium? Possimus sapiente aspernatur, illo ullam odit atque.</p>
+</body>
+</html>

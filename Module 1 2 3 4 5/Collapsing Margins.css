@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+}
+
+.example {
+    background-color: darkgray;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 500px;
+}
+
+/* |||||||||||||||||||||||||| Example 1 |||||||||||||||||||||||||| */
+.box-one {
+    background-color: greenyellow;
+    margin: 10px;
+}
+
+.box-two {
+    background-color: hotpink;
+    margin: 20px;
+}
+
+/* By inspecting elements we can see that, space between
+   box-one and box-two is not 30px i.e. by adding margin-
+   bottom of box-one and margin-top of box-two. But rather
+   it is 20px because CSS chooses in between space as 
+   max(margin-top of box-two, margin-bottom of box-one). */
+
+/* |||||||||||||||||||||||||| Example 2 |||||||||||||||||||||||||| */
+
+.box-three, .box-four {
+    display: inline-block;
+}
+
+.box-three {
+    background-color: orangered;
+    margin: 30px;
+}
+
+.box-four {
+    background-color: skyblue;
+    margin: 15px;
+}
+
+/* In case of inline-block elements none of the margins
+   collapse */
+
+/* |||||||||||||||||||||||||| Example 3 |||||||||||||||||||||||||| */
+
+
+.box-five, .box-six {
+    display: inline;
+}
+
+.box-five {
+    background-color: olivedrab;
+    margin: 10px;
+}
+
+.box-six {
+    background-color: peru;
+    margin: 20px;
+}
+
+/* For inline elements we can see that margin-right
+   of box-five and margin-left of box-six do not
+   collapse at all, though inline elements do not
+   possess top and bottom margins. */
+
+/* |||||||||||||||||||||||||| Example 4 |||||||||||||||||||||||||| */
+
+.container {
+    background-color: chocolate;
+    margin-top: 10px;
+}
+
+.one, .two {
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+}
+
+.one {
+    background-color: teal;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.two {
+    background-color: blueviolet;
+}
+
+/* Since both .container and .one have common top edge, hence
+   margin-top of both .container and .one are going to collapse */
+
+/* |||||||||||||||||||||||||| Example 5 |||||||||||||||||||||||||| */
+
+/* To prevent this kind of bug, we need to provide the separation
+   between the edges of .container and .one, either by providing
+   border or padding to .container */
+
+.newContainerOne {
+    background-color: chocolate;
+    margin-top: 10px;
+    border-top: 5px solid black;
+}
+
+/* |||||||||||||||||||||||||| Example 6 |||||||||||||||||||||||||| */
+
+.newContainerTwo {
+    background-color: chocolate;
+    margin-top: 10px;
+    padding-top: 5px;
+}
