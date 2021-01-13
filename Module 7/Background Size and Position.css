@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    width: max-content;
+    color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, orange, yellow);
+    -webkit-background-clip: text;
+}
+
+.container {
+    color: lime;
+    font-size: 30px;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+}
+
+/* BACKGROUND SIZE:- Sets the size of the image, with this property we can stretch or shrink the dimensions (width and height) of an image independently with each other. */
+.one {
+    background-image: url('Image 1.jpg');
+    /* by default background-size: auto; this way aspect ratio of the image is preserved and image possess its original size in px. */
+}
+
+.two {
+    background-image: url('Image 1.jpg');
+    /* one value syntax sets the width of the image. The height is set to auto to preserve the aspect ratio of the image. If the value is having % as its unit then its dimension is with respect to the respective dimension of the container. If value is having px as its unit then that dimension of the image is absolute */
+    background-size: 50%;
+}
+
+.three {
+    background-image: url('Image 1.jpg');
+    background-size: 300px 100%;
+    /*                ^     ^ 
+                    width height */
+}
+
+.four {
+    background-image: url('Image 2.jpg');
+    /* keyword syntax:- Like auto as keyword we have 2 more key words, cover and contain. cover === background-size: 100%; and contain, sets the image size so that entire image fits inside the container along with maintaining its aspect ratio */
+    background-size: cover;
+}
+
+.five {
+    background-image: url('Image 2.jpg');
+    background-size: contain;
+}
+
+/* BACKGROUND POSITION:- By this property, we can position the the image with respect to the container. Its like positioning and absolutely positioned element inside relatively positioned element by extended properties such as top, bottom, right, left. */
+.six {
+    background-image: url('Image 1.jpg');
+    /* By one value syntax, left of the image gets positioned to whatever value we provide and top gets positioned to center, with respect to container.
+    If the value has px as units, then left corner of image is positioned to left corner of the container. Moving a background image by X% means it will align the X% point in the image to the X% point in the container. */
+    background-position: 20px;
+}
+
+.seven {
+    background-image: url('Image 1.jpg');
+    background-size: 60% 400px;
+    /* Two value syntax */
+    /* Point which is [30% of the height of the image] units away from the top corner of the image gets aligned with the point which is [30% of the height of the container] units away from the top of the container. */
+    background-position: 10px 30%;
+    /*                    ^    ^
+                        left  top */
+}
+
+.eight {
+    background-image: url('Image 2.jpg');
+    background-size: 30%;
+    background-position: bottom right;
+}
+
+.nine {
+    background-image: url('Image 2.jpg');
+    background-size: 30%;
+    /* left/right automatically gets position of center */
+    background-position: top;
+}
+
+.ten {
+    background-image: url('Image 2.jpg');
+    background-size: 40%;
+    /* center center === background-position: 50% 50% */
+    background-position: center center;
+}
+
+.eleven {
+    background-image: url('Image 2.jpg');
+    background-size: 30%;
+    /* Three value syntax, 20px from bottom and 0px from left */
+    background-position: bottom 20px left;
+
+    /* 20px from left and 0px from bottom
+    background-position: bottom left 20px; */
+}
+
+.twelve {
+    background-image: url('Image 2.jpg');
+    background-size: 30%;
+    /* Four value syntax, -120px from right and 5 px from top*/
+    background-position: right -120px top 10px;
+}

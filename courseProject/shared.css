@@ -30,15 +30,28 @@ body {
 }
 
 .main-header__brand {
+    display: inline-block;
     color: #0e4f1f;
     text-decoration: none;
     font-weight: 700;
     font-size: 25px;
+    height: 35px;
+}
+
+.main-header__brand > img {
+    height: 100%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.main-header__brand > span {
+    vertical-align: middle;
 }
 
 .main-nav {
     display: inline-block;
-    width: calc(100% - 77.9px);
+    /* width: calc(100% - 77.9px); */
+    width: calc(100% - 118px);
     text-align: right;
     vertical-align: middle;
 }

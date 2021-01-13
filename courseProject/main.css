@@ -1,13 +1,14 @@
 /* //////////////////////////////////////////// <main> //////////////////////////////////////////// */
 
 #product-overview {
-    background: url("freedom.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 10% 20%;
     width: 100%;
     height: 528px;
-    margin-top: 46.4px;
+    background-image: url("images/freedom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 60%;
+    background-clip: padding-box;
+    margin-top: 51px;
     padding: 10px;
 
     position: relative;
