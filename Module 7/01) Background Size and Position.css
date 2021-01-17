@@ -1,23 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-
 h1 {
     width: max-content;
     color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(to right, orange, yellow);
+    background-image: linear-gradient(to top right, purple, yellow, green);
+    background-clip: padding-box; /* For compatibility */
     -webkit-background-clip: text;
-}
-
-.container {
-    color: lime;
-    font-size: 30px;
-    background-color: antiquewhite;
-    width: 500px;
-    height: 500px;
-    border: 2px solid red;
-    margin-bottom: 10px;
-    background-repeat: no-repeat;
 }
 
 /* BACKGROUND SIZE:- Sets the size of the image, with this property we can stretch or shrink the dimensions (width and height) of an image independently with each other. */
@@ -41,7 +27,7 @@ h1 {
 
 .four {
     background-image: url('Image 2.jpg');
-    /* keyword syntax:- Like auto as keyword we have 2 more key words, cover and contain. cover === background-size: 100%; and contain, sets the image size so that entire image fits inside the container along with maintaining its aspect ratio */
+    /* keyword syntax:- Like auto as keyword we have 2 more key words, cover and contain. cover === background-size: 100%; or background-size: auto 100%; depending on the aspect ratio which fills the entire background perfectly. And contain, sets the image size so that entire image fits inside the container along with maintaining its aspect ratio no matter if background is not fully filled */
     background-size: cover;
 }
 

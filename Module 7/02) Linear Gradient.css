@@ -1,0 +1,73 @@
+.container {
+    width: 400px;
+    height: 400px;
+}
+
+.one {
+/* Linear gradients are treated as background images */
+    background-image: linear-gradient(to right, yellow, orangered);
+}
+
+.two {
+    /* We can combine as many colors as we want */
+    background-image: linear-gradient(to top, lime, red, purple, green);
+
+}
+
+.three {
+    /* Directional can even be diagonal */
+    background-image: linear-gradient(to bottom left, pink, black);
+}
+
+.four {
+    /* Green originates at 60% of gradient line, color red originates at 90% of gradient line and color blue has default origin at 100% of gradient line. */
+    background-image: linear-gradient(to right, green 60%, red 90%, blue);
+}
+
+.five {
+    /* Same as above but diagonal */
+    background-image: linear-gradient(to top right, green 60%, red 90%, blue);
+}
+
+.six {
+    /* Both color red and blue has origin at 60% of gradient line, hence resulting a solid color change :) */
+    background-image: linear-gradient(to right, red 60%, blue 60%);
+}
+
+.seven {
+    /* We can even add background-size and background-position properties */
+    background-image: linear-gradient(to top right, yellow, orangered);
+    background-size: 50% 20px;
+    background-position: bottom right;
+}
+
+/* We can even direct gradients to an angle, 0deg is at top, and gradient line revolves clock-wise */
+
+/* 0deg is to top */
+.eight { background-image: linear-gradient(0deg, aqua, blue); }
+
+/* 45% is tto top right */
+.nine { background-image: linear-gradient(45deg, aqua, blue); }
+
+/* 90deg is to right */
+.ten { background-image: linear-gradient(90deg, aqua, blue); }
+
+/* 180deg is to bottom */
+.eleven { background-image: linear-gradient(180deg, aqua, blue); }
+
+/* CUstom color stops */
+.twelve {
+    background-image:
+        linear-gradient(
+            90deg,
+            red 20%,
+            orange 20%,
+            orange 40%,
+            yellow 40%,
+            yellow 60%,
+            green 60%,
+            green 80%,
+            blue 80%
+        );
+}
+

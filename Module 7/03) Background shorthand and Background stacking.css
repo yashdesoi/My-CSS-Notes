@@ -1,0 +1,65 @@
+/* Background shorthand */
+.container {
+    width: 400px;
+    height: 400px;
+}
+
+.one {
+    background:
+        url('Image\ 1.jpg')                    /* image */
+        bottom 10px right 10px / 50% 80px      /* position / size */
+        no-repeat                              /* repeat */
+        yellow;                              /* color */
+}
+
+.two {
+    background-image: url("Image\ 1.jpg");
+    background-position: bottom 10px right 10px;
+    background-size: 50% 80px;
+    background-repeat: no-repeat;
+    background-color: yellow;
+}
+
+/* Stacking multiple backgrounds */
+.three {
+    background-image:
+        url("Image\ 1.jpg"), /* 1st */
+        url("Image\ 2.jpg"); /* 2nd */
+
+    background-position:
+        center, /* Image 1 */
+        top left; /* Image 2 */
+
+    background-size:
+        50%, /* Image 1 */
+        contain; /* Image 2 */
+
+    background-repeat:
+        no-repeat, /* Image 1 */
+        no-repeat; /* Image 2 */
+
+    background-color: brown;
+}
+
+.four {
+    /* Stacking multiple images using short hand */
+    background:
+        url("Image\ 1.jpg")   /* Image 1 */
+        center / 50%
+        no-repeat,
+        url("Image\ 2.jpg")   /* Image 2 */
+        top left / contain 
+        no-repeat,
+        brown;
+}
+
+.five {
+    /* Stacking gradient and image */
+    /* background: linear-gradient(to bottom, green yellow, red), url("Image\ 3.jpg") center / cover no-repeat; */
+
+    background:
+        linear-gradient(to bottom, rgba(0, 128, 0, 0.7), rgba(255, 255, 0, 0.7), rgba(255, 255, 0, 0.7), rgba(255, 0, 0, 0.7)),
+        url("Image\ 3.jpg")
+        center / cover 
+        no-repeat;
+}

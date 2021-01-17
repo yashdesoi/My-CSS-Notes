@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    color: lime;
+    font-size: 30px;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+}

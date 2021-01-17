@@ -26,7 +26,8 @@ body {
 }
 
 .main-nav__item > a {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
     text-decoration: none;
     color: white;
 }
