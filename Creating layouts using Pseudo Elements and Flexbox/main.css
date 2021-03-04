@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    /* background-color: darkblue; */
+    display: flex;
+}
+
+.container::after {
+    content: '';
+    flex-grow: 1;
+    order: -1;
+}
+
+.item {
+    width: 130px;
+    height: 80px;
+}
+
+.item-1 {
+    background-color: darkturquoise;
+    order: -1;
+}
+
+.item-2 {
+    background-color: forestgreen;
+}
+.item-3 {
+    background-color: yellowgreen;
+}
+
+.item-4 {
+    background-color: lightgreen;
+}
